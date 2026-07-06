@@ -1,0 +1,4 @@
+^data-raw$
+^\.Rproj\.user$
+^.*\.Rproj$
+^LICENSE\.md$
