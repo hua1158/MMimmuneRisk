@@ -1,0 +1,32 @@
+Package: MMimmuneRisk
+Title: Immune-Related Risk Classifier for Multiple Myeloma
+Version: 1.0.0
+Authors@R: person("HXE", role = c("aut", "cre"), email = "hxe@example.com")
+Description: A machine-learning-based risk stratification tool for multiple myeloma
+    patients using immune-related gene expression. Implements a RSF + plsRcox pipeline
+    to compute a Programmed Cell Death Index (PCDI) risk score from bulk RNA-seq data,
+    classifies patients into High/Low risk groups, and provides a dynamic nomogram
+    (Shiny app) for individualized survival prediction.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.1.0)
+Imports:
+    survival,
+    rms,
+    plsRcox,
+    randomForestSRC,
+    survminer,
+    shiny,
+    ggplot2,
+    DT,
+    scales,
+    patchwork
+Suggests:
+    timeROC,
+    forestploter,
+    regplot,
+    dcurves,
+    testthat (>= 3.0.0)
