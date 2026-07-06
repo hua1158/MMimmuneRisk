@@ -1,0 +1,25 @@
+export(predict_mmrisk)
+export(classify_mmrisk)
+export(model_genes)
+export(signature_genes)
+export(plot_km_risk)
+export(run_dynnom)
+export(setup_model)
+
+import(shiny)
+import(survival)
+importFrom(rms, cph, datadist, survest, nomogram, Survival)
+importFrom(plsRcox, plsRcox, cv.plsRcox)
+importFrom(survminer, ggsurvplot, surv_cutpoint)
+importFrom(ggplot2, ggplot, aes, geom_point, geom_line, geom_segment,
+           geom_text, geom_hline, geom_vline, geom_rect, geom_ribbon,
+           geom_histogram,
+           theme_minimal, theme_bw, theme, element_text, element_blank,
+           element_line, labs, scale_color_manual, scale_fill_manual,
+           coord_cartesian, annotate, ggtitle, xlab, ylab, margin,
+           scale_x_continuous, scale_y_continuous, unit)
+importFrom(DT, DTOutput, renderDT, datatable, formatRound)
+importFrom(scales, label_percent)
+importFrom(stats, predict, median, sd, quantile, as.formula)
+importFrom(utils, read.csv, write.csv, read.delim)
+importFrom(grDevices, pdf, dev.off)
